@@ -1,11 +1,32 @@
 {
   "name": "parallax",
   "version": "0.1.0",
+  "description": "Per-issue bounties for open-source work, escrowed and settled on Stellar.",
+  "license": "MIT",
+  "homepage": "https://github.com/zeemscript/parallax#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeemscript/parallax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zeemscript/parallax/issues"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "usdc",
+    "bounties",
+    "escrow",
+    "open-source"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && tsc -b && vite build",
     "preview": "vite preview",
     "test:smoke": "node scripts/smoke-test.mjs",
     "visual:check": "node scripts/visual-check.mjs",
@@ -16,17 +37,17 @@
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
     "@fontsource/ibm-plex-mono": "^5.3.0",
-    "lucide-react": "^1.41.0",
-    "motion": "^13.2.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router-dom": "^7.8.2"
+    "lucide-react": "^1.50.0",
+    "motion": "^13.5.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
-    "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.9",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^5.0.2",
-    "playwright-core": "^1.55.0",
+    "playwright-core": "^1.63.0",
     "typescript": "^5.9.2",
     "vite": "^7.1.3"
   }
